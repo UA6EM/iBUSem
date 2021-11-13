@@ -1,0 +1,26 @@
+#######################################
+# Syntax Coloring Map for iBUSTelemetry
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+iBUSem	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+time_since_last	KEYWORD2
+handle  KEYWORD2
+is_alive	KEYWORD2
+set_alive_timeout	KEYWORD2
+set_tx_period	KEYWORD2
+get_tx_channel  KEYWORD2
+set_channel	KEYWORD2
+get_channel	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
