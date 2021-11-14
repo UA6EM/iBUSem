@@ -13,8 +13,8 @@ iBus ibus(sw_ser);
 // If you are on a board with multiple hardware serial, you can use that instead
 // iBus ibus(Serial2);
 
-// Currently, recivers transmit 14 channels over iBUS, with the inactive channels set to 1500
-int channels_per_packet = 14;
+// Currently, recivers transmit 14 (10) channels over iBUS, with the inactive channels set to 1500
+int channels_per_packet = 10;
 
 void setup() 
 {
