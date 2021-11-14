@@ -29,11 +29,13 @@ m_ser(serial)
 	serial.begin(115200);
 	this->m_ser = serial;
 }
+*/
+
 int iBus::get_channel(int ch)
 {
 	return m_channel[ch];
 }
-*/
+
 
 void iBus::set_channel(int ch, int val)
 {
