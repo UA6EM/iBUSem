@@ -7,7 +7,7 @@
 #include "iBUSem.h"
 #include <AltSoftSerial.h>
 
-AltSoftSerial sw_ser = AltSoftSerial(8, 9); 
+AltSoftSerial sw_ser(8, 9); 
 iBus ibus(sw_ser);
 
 // If you are on a board with multiple hardware serial, you can use that instead
