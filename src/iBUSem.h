@@ -3,7 +3,7 @@
 #include <Arduino.h>
 #include <HardwareSerial.h>
 //#include <SoftwareSerial.h>
-//#include <AltSoftSerial.h>
+#include <AltSoftSerial.h>
 #include <CustomSoftwareSerial.h>
 
 class iBus
@@ -14,9 +14,9 @@ public:
      * Constructor for the class. Takes either a HardwareSerial or SoftwareSerial class
      */
     iBus(HardwareSerial& serial);
-   // iBus(SoftwareSerial& serial);
-   // iBus(AltSoftSerial& serial);
-	iBus(CustomSoftwareSerial& serial);
+ //   iBus(SoftwareSerial& serial);
+    iBus(AltSoftSerial& serial);
+  	iBus(CustomSoftwareSerial& serial);
     
     /**
      * A getter to get received channel values
