@@ -16,7 +16,7 @@ public:
     iBus(HardwareSerial& serial);
  //   iBus(SoftwareSerial& serial);
     iBus(AltSoftSerial& serial);
-  	iBus(CustomSoftwareSerial& serial);
+    iBus(CustomSoftwareSerial& serial);
     
     /**
      * A getter to get received channel values
