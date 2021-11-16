@@ -6,14 +6,13 @@ m_ser(serial)
 	serial.begin(115200);
 	this->m_ser = serial;
 }
-/*
+
 iBus::iBus(SoftwareSerial& serial):
 m_ser(serial)
 {
 	serial.begin(115200);
 	this->m_ser = serial;
 }
-*/
 
 iBus::iBus(AltSoftSerial& serial):
 m_ser(serial)
@@ -22,14 +21,12 @@ m_ser(serial)
 	this->m_ser = serial;
 }
 
-/*
 iBus::iBus(CustomSoftwareSerial& serial):
 m_ser(serial)
 {
 	serial.begin(115200);
 	this->m_ser = serial;
 }
-*/
 
 int iBus::get_channel(int ch)
 {
