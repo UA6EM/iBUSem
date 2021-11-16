@@ -18,7 +18,7 @@ m_ser(serial)
 iBus::iBus(AltSoftSerial& serial):
 m_ser(serial)
 {
-	serial.begin(115200);
+	serial.begin(115200, SERIAL_8N1);
 	this->m_ser = serial;
 }
 
