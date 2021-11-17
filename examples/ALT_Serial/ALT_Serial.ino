@@ -14,7 +14,7 @@
 AltSoftSerial sw_ser(8, 9); 
 iBus ibus(sw_ser);
 #else
-CustomSoftwareSerial sw_ser(8, 9); 
+CustomSoftwareSerial sw_ser(6, 7); 
 iBus ibus(sw_ser);
 #endif
 
