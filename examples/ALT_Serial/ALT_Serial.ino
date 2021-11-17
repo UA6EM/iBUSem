@@ -10,6 +10,16 @@
 #include <AltSoftSerial.h>
 #include <CustomSoftwareSerial.h>
 
+// *** ВАЖНО!!! *** ЧИТАТЬ ВНИМАТЕЛЬНО!!! ***
+
+// Так как библиоткека iBUSTelemetry.h использует прерывание PCINT0 во избежание конфликта
+// в библиотке CustomSoftwareSerial.h требуется замаркировать блок обработки прерывания PCINT0
+// строки 313 - 320, то-есть для порта можно использовать только пины  A0 .. A5 или D0 .. D7
+/*
+    D8 .. D13 - генерируют запрос прерывания PCINT0
+    A0 .. A5  - генерируют запрос прерывания PCINT1
+    D0 .. D7  - генерируют запрос прерывания PCINT2
+*
 #ifdef ALT_SERIAL
 AltSoftSerial sw_ser(8, 9); 
 iBus ibus(sw_ser);
