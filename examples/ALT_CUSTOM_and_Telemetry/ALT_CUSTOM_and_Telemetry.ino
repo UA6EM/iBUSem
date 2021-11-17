@@ -16,11 +16,11 @@ iBUSTelemetry telemetry(11); // I use only PCINT0 interrupt vector, so you can u
 uint32_t prevMillis = 0; // Necessary to updateValues() method. Look below.
 float i = 0;
 
+// *** ВАЖНО!!! *** ЧИТАТЬ ВНИМАТЕЛЬНО!!! ***
 
-// ЧИТАТЬ ВНИМАТЕЛЬНО!!!
 // Так как библиоткека iBUSTelemetry.h использует прерывание PCINT0 во избежание конфликта
 // в библиотке CustomSoftwareSerial.h требуется замаркировать блок обработки прерывания PCINT0
-// строки 313 - 320, то-есть можно использовать только пины  A0 .. A5 или D0 .. D7
+// строки 313 - 320, то-есть для порта можно использовать только пины  A0 .. A5 или D0 .. D7
 /*
     D8 .. D13 - генерируют запрос прерывания PCINT0
     A0 .. A5  - генерируют запрос прерывания PCINT1
