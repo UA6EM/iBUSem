@@ -19,7 +19,7 @@
     D8 .. D13 - генерируют запрос прерывания PCINT0
     A0 .. A5  - генерируют запрос прерывания PCINT1
     D0 .. D7  - генерируют запрос прерывания PCINT2
-*
+*/
 #ifdef ALT_SERIAL
 AltSoftSerial sw_ser(8, 9); 
 iBus ibus(sw_ser);
